@@ -1,5 +1,5 @@
-var express = require('express');
-var path = require('path');
+import express from 'express';
+import path from 'path';
 import open from 'open'; //Babel > ES6
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
