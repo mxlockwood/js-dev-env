@@ -23,7 +23,8 @@
       "clean-dist": "rimraf ./dist && mkdir dist",
       "prebuild": "npm-run-all clean-dist test lint",
       "build": "babel-node buildScripts/build.js",
-      "postbuild": "babel-node buildScripts/distServer.js start-mockapi"
+      "postbuild": "babel-node buildScripts/distServer.js start-mockapi",
+      "deploy": "surge ./dist"
   },
   "author": "Michael X Lockwood",
   "license": "MIT",
